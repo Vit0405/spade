@@ -177,16 +177,16 @@ checksum = "98cc8fbded0c607b7ba9dd60cd98df59af97e84d24e49c8557331cfc26d301ce"
 
 [[package]]
 name = "codespan"
-version = "0.12.0"
-source = "git+https://gitlab.com/spade-lang/codespan.git?branch=master#a5656af9ed33460258fd1921bc6bede1ba0fb00e"
+source = "registry+https://github.com/brendanzab/codespan/tree/release-0.12.0/codespan"
+checksum = "0"
 dependencies = [
- "codespan-reporting 0.12.0",
+ "codespan-reporting",
  "serde",
 ]
 
 [[package]]
+version = "0.12.0"
 name = "codespan-reporting"
-version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3538270d33cc669650c4b093848450d380def10c331d38c768e34cac80576e6e"
 dependencies = [
@@ -195,9 +195,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "codespan-reporting"
 version = "0.12.0"
-source = "git+https://gitlab.com/spade-lang/codespan.git?branch=master#a5656af9ed33460258fd1921bc6bede1ba0fb00e"
+name = "codespan-reporting"
+source = "registry+https://github.com/brendanzab/codespan/tree/release-0.12.0/codespan-reporting"
+checksum = "0"
 dependencies = [
  "serde",
  "termcolor",
@@ -278,7 +279,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9327c7f9fbd6329a200a5d4aa6f674c60ab256525ff0084b52a889d4e4c60cee"
 dependencies = [
  "cc",
- "codespan-reporting 0.11.1",
+ "codespan-reporting 0.12.0",
  "once_cell",
  "proc-macro2",
  "quote",
